@@ -11,3 +11,13 @@ env = os.getenv('ENVIRONMENT')
 
 print(f"API key loaded: {'Yes' if api_key else 'No'}")
 print(f"Environment: {env}")
+
+from langchain_openai import ChatOpenAI
+
+# Initialize ChatOpenAI
+llm = ChatOpenAI()
+
+# Get and print the response
+response = llm.invoke("What is an LLM?")
+print(f"Response: {response}")
+
