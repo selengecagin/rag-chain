@@ -21,3 +21,5 @@ llm = ChatOpenAI()
 response = llm.invoke("What is an LLM?")
 print(f"Response: {response}")
 
+from langchain_core.prompts import ChatPromptTemplate
+prompt = ChatPromptTemplate.from_messages([])
